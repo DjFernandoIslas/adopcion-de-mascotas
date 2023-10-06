@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,10 +20,10 @@
         </div>
         <ul class="menu-list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="form_adopcion.html">Adopta</a></li>
+            <li><a href="adopta.html">Adopta</a></li>
             <li><a href="#">Quienes somos</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Refugios</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="refugios.html">Refugios</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
@@ -36,142 +35,140 @@
     <img class="side-left-img" src="./img/sideleftloro.jpg" alt="Imagen de dos loros"  href="#">
     <img class="side-left-img" src="./img/sideleftconejo.jpg" alt="Imagen de un conejo"  href="#"> 
 </div>
-<div class="container-formulario">
-    <h2>FORMULARIO DE ADOPCION </h2>
-
-    <form action="" method="get">
+    <div class="container-formulario">
+        <h2>FORMULARIO DE ADOPCION </h2>
+        <form action="" method="get">
         <p>*(Campo obligatorio)</p>
-        <div>
-            <p>Nombre y Apellido*</p>
-            <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre y apellido aqui..." required>
+            <div>
+                <p>Nombre y Apellido*</p>
+                <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre y apellido aqui..." required>
+            </div>
+            <div>
+                <p>Direccion de email*</p>
+                <input type="email" id="email" name="email" placeholder="ingrese su email aqui..." required>
+            </div>
+            <div>
+                <label for="doc">Tipo de documento*</label>
+                <select name="tipodoc" id="doc">
+                    <option>D.N.I </option>
+                    <option>L.C</option>
+                    <option>L.E</option>
+                    <OPtion>C.I</OPtion>
+                </select>
+            </div>
+            <div>
+                <p>Numero de documento*</p>
+                <input type="number" id="numero" name="numero" placeholder="ingrese su numero de documento aqui..."
+                    required>
+            </div>
+            <div>
+                <p>Telefono de contacto*</p>
+                <input type="number" id="telefono" name="telefono" placeholder="ingrese su telefono aqui..." required>
+            </div>
+            <div>
+                <label for="hs">Horario de preferencia para ser contactado </label>
+                <select name="horas" id="hs">
+                    <option>Seleccione</option>
+                    <option>8 a 10 hs</option>
+                    <option>10 a 12 hs</option>
+                    <option>12 a 14 hs</option>
+                    <OPtion>14 a 16 hs</OPtion>
+                    <OPtion>16 a 18 hs</OPtion>
+                </select>
+            </div>
+            <div>
+                <p>Direccion completa*</p>
+                <input type="text" id="direccion" name="direccion" placeholder="ingrese su direccion aqui..." required>
+            </div>
+            <div>
+                <p>Localidad*</p>
+                <input type="text" id="localidad" name="localidad" placeholder="ingrese su localidad aqui..." required>
+            </div>
 
-        </div>
-        <div>
-            <p>Direccion de email*</p>
-            <input type="email" id="email" name="email" placeholder="ingrese su email aqui..." required>
-        </div>
-        <div>
-            <label for="doc">Tipo de documento*</label>
-            <select name="tipodoc" id="doc">
-                <option>D.N.I </option>
-                <option>L.C</option>
-                <option>L.E</option>
-                <OPtion>C.I</OPtion>
-            </select>
-        </div>
-        <div>
-            <p>Numero de documento*</p>
-            <input type="number" id="numero" name="numero" placeholder="ingrese su numero de documento aqui..."
-                required>
-        </div>
-        <div>
-            <p>Telefono de contacto*</p>
-            <input type="number" id="telefono" name="telefono" placeholder="ingrese su telefono aqui..." required>
-        </div>
-        <div>
-            <label for="hs">Horario de preferencia para ser contactado </label>
-            <select name="horas" id="hs">
-                <option>Seleccione</option>
-                <option>8 a 10 hs</option>
-                <option>10 a 12 hs</option>
-                <option>12 a 14 hs</option>
-                <OPtion>14 a 16 hs</OPtion>
-                <OPtion>16 a 18 hs</OPtion>
-            </select>
-        </div>
-        <div>
-            <p>Direccion completa*</p>
-            <input type="text" id="direccion" name="direccion" placeholder="ingrese su direccion aqui..." required>
-        </div>
-        <div>
-            <p>Localidad*</p>
-            <input type="text" id="localidad" name="localidad" placeholder="ingrese su localidad aqui..." required>
-        </div>
+            <div>
+                <p>Provincia*</p>
+                <input type="text" id="provincia" name="provincia" placeholder="ingrese su provincia aqui..." required>
+            </div>
 
-        <div>
-            <p>Provincia*</p>
-            <input type="text" id="provincia" name="provincia" placeholder="ingrese su provincia aqui..." required>
-        </div>
+            <div>
+                <p>Qué tipo de vivienda habitás?*</p>
+                <input type="radio" id="casa" name="vivienda" value="casa" required>
+                <label for="casa">Casa </label><br>
+                <input type="radio" id="departamento" name="vivienda" value="departamento" required>
+                <label for="departamento">Departamento </label>
+            </div>
+            <div>
+                <p>Seleccioná la opción correcta*</p>
+                <input type="radio" id="propietario" name="tipo" value="propietario" required>
+                <label for="propietario">Propietario </label><br>
+                <input type="radio" id="inquilino" name="tipo" value="inquilino" required>
+                <label for="inquilino">Inquilino </label>
+            </div>
+            <div>
+                <p>En caso de alquilar, consultaste previamente con el dueño de la vivienda si se puede tener mascotas?
+                    *
+                </p>
+                <input type="radio" id="si" name="tenermascota" value="si" required>
+                <label for="si">si, pregunté y se puede tener mascotas </label><br>
+                <input type="radio" id="no" name="tenermascota" value="no" required>
+                <label for="no">No pregunté </label><br>
+                <input type="radio" id="noalquilo" name="tenermascota" value="noalquilo" required>
+                <label for="noalquilo">No alquilo </label>
+            </div>
+            <div>
+                <p>Tenes cerramientos en balcones y/o ventanas?(red o rejas)*</p>
+                <select name="cerramientos" id="cerramientos">
+                    <option>Si,tengo red</option>
+                    <option>Si,tengo rejas</option>
+                    <option>No,pero voy a colocar</option>
+                    <option>No pienso en colocarlo</option>
 
-        <div>
-            <p>Qué tipo de vivienda habitás?*</p>
-            <input type="radio" id="casa" name="vivienda" value="casa" required>
-            <label for="casa">Casa </label><br>
-            <input type="radio" id="departamento" name="vivienda" value="departamento" required>
-            <label for="departamento">Departamento </label>
-        </div>
-        <div>
-            <p>Seleccioná la opción correcta*</p>
-            <input type="radio" id="propietario" name="tipo" value="propietario" required>
-            <label for="propietario">Propietario </label><br>
-            <input type="radio" id="inquilino" name="tipo" value="inquilino" required>
-            <label for="inquilino">Inquilino </label>
-        </div>
-        <div>
-            <p>En caso de alquilar, consultaste previamente con el dueño de la vivienda si se puede tener mascotas?
-                *
-            </p>
-            <input type="radio" id="si" name="tenermascota" value="si" required>
-            <label for="si">si, pregunté y se puede tener mascotas </label><br>
-            <input type="radio" id="no" name="tenermascota" value="no" required>
-            <label for="no">No pregunté </label><br>
-            <input type="radio" id="noalquilo" name="tenermascota" value="noalquilo" required>
-            <label for="noalquilo">No alquilo </label>
-        </div>
-        <div>
-            <p>Tenes cerramientos en balcones y/o ventanas?(red o rejas)*</p>
-            <select name="cerramientos" id="cerramientos">
-                <option>Si,tengo red</option>
-                <option>Si,tengo rejas</option>
-                <option>No,pero voy a colocar</option>
-                <option>No pienso en colocarlo</option>
+                </select>
+            </div>
+            <div class="tipomascota">
 
-            </select>
-        </div>
-        <div class="tipomascota">
+                <p>Tipo de mascota que querés adoptar*</p>
+                <input type="radio" id="perro" name="mascota" value="perro" required>
+                <label for="perro">Perro </label><br>
+                <input type="radio" id="gato" name="mascota" value="gato" required>
+                <label for="gato">Gato </label>
+            </div>
+            <div>
+                <p>Tenes otras mascotas?*</p>
+                <input type="radio" id="simascota" name="ok" value="Si" required>
+                <label for="simascota">Si </label><br>
+                <input type="radio" id="nomascota" name="ok" value="No" required>
+                <label for="nomascota">No</label>
+            </div>
+            <div>
+                <p>En caso de tener otras mascotas</p>
+                <input type="text" name="edades" id="edades" placeholder="indicanos cuales y sus edades ">
+            </div>
+            <div>
+                <p>En caso de tener otras mascotas, estan castradas?*</p>
+                <select name="castracion" id="castracion">
+                    <option>Si, todas estan castradas </option>
+                    <option>Algunas si, y otras no</option>
+                    <option>No castre aun, pero lo voy a hacer</option>
+                    <OPtion>No estan castradas</OPtion>
+                    <OPtion>No tengo otras mascotas</OPtion>
+                </select>
+            </div>
 
-            <p>Tipo de mascota que querés adoptar*</p>
-            <input type="radio" id="perro" name="mascota" value="perro" required>
-            <label for="perro">Perro </label><br>
-            <input type="radio" id="gato" name="mascota" value="gato" required>
-            <label for="gato">Gato </label>
-        </div>
-        <div>
-            <p>Tenes otras mascotas?*</p>
-            <input type="radio" id="simascota" name="ok" value="Si" required>
-            <label for="simascota">Si </label><br>
-            <input type="radio" id="nomascota" name="ok" value="No" required>
-            <label for="nomascota">No</label>
-        </div>
-        <div>
-            <p>En caso de tener otras mascotas</p>
-            <input type="text" name="edades" id="edades" placeholder="indicanos cuales y sus edades ">
-        </div>
-        <div>
-            <p>En caso de tener otras mascotas, estan castradas?*</p>
-            <select name="castracion" id="castracion">
-                <option>Si, todas estan castradas </option>
-                <option>Algunas si, y otras no</option>
-                <option>No castre aun, pero lo voy a hacer</option>
-                <OPtion>No estan castradas</OPtion>
-                <OPtion>No tengo otras mascotas</OPtion>
-            </select>
-        </div>
+            <div>
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Enviar">
+            </div>
 
-        <div>
-            <input type="reset" value="Limpiar">
-            <input type="submit" value="Enviar">
-        </div>
-
-    </form>
-</div>
-
+        </form>
+    </div>
 <div class="side-right"> 
     <div class="side-right-container">
     <h3>Titulo</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus provident quidem, repellendus velit esse voluptate, eveniet vel, molestias nihil eligendi repudiandae nesciunt hic itaque nisi. Expedita quod debitis adipisci voluptates?</p></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus provident quidem, repellendus velit esse voluptate, eveniet vel, molestias nihil eligendi repudiandae nesciunt hic itaque nisi. Expedita quod debitis adipisci voluptates?</p>
+    </div>
 </div>
-
+</div>
 <footer>
     <div class="footer-left">
         <a href="http://www.instagram.com/" target="_blank">Instagram</a>
@@ -190,5 +187,3 @@
 </footer>
 </body>
 </html>
-
-   

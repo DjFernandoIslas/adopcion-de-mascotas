@@ -8,7 +8,7 @@ width: 100%;
 max-width: 1200px;
 box-sizing: content-box;
 display: flex;
-background: lightcyan;
+
 border-radius: 5px;
 justify-content: center;
 flex-wrap: wrap;
@@ -18,8 +18,8 @@ padding: 10px;
 }
 
 .card {
-    width: 305px;
-    height: 310px;
+    width: 250px;
+    height: auto;
     box-sizing: content-box;
     text-align: center;
     margin: 15px;
@@ -30,35 +30,48 @@ padding: 10px;
 }
 
 .card img {
-    width: 350px;
-    height: auto;
+    width: 250px;
+    height: 140px;
     max-width: 100%;
 }
 
 .card h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 19px;
+    font-family:Raleway;
+    font-size: 17px;
 }
 
 .card p {
-    font-family: 'Montserrat', sans-serif;
-    padding: 8px;
-    text-align: center;
-    font-size: 14px;
+    font-family: Raleway;
+    padding: 10px;
+    font-size: 11px;
 }
 
 .card a {
     text-decoration: none;
     font-size: 1.1rem;
     color: black;
-    transition: all 0.2s;
+    
 }
 
 .card a:hover {
     display: block;
     background: antiquewhite;
     border-radius: 0 0 0 10px;
-    padding: 5px;
+    
     color: gray;
     margin: 0 ;
+}
+#colunm {
+    column-count: 2;
+    column-gap: 13px;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    padding: 10px;
+    column-rule: 4px dotted gray;
+    color: gray;
+}
+span {
+    font-weight: bold;
+    color: red;
 }
