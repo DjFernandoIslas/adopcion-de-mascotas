@@ -17,7 +17,7 @@ body{
   }
   
   .side-left {
-    background-color: #FFA500;;
+    background-color: #a749ff;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -29,7 +29,7 @@ body{
   }
   
   .side-right {
-    background-color: #FFA500;);
+    background-color: #a749ff;
     display: flex;
     flex-direction: column;
   }
