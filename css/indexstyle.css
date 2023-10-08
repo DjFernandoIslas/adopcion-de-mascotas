@@ -50,11 +50,28 @@ body{
     -o-border-radius: 15px;
 }
 
+.boton-right-side{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #addb08e7;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 60%;
+    margin: 10px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 2, 2);
+}
+
 footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #FFA500;;
+    background-color: #FFA500;
   
 }
 
@@ -72,5 +89,5 @@ footer{
 
 footer a{
     text-decoration: none;
-    color: white;
+    color: rgb(43, 0, 59);
 }
