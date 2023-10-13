@@ -54,18 +54,18 @@ padding: 10px;
 }
 
 .card a:hover {
-    display: block;
-    background: antiquewhite;
-    border-radius: 0 0 0 10px;
     
-    color: gray;
+    background-color: #FFA500;
+    border-radius: 0 0 0 10px;
+    text-align: center;
+    color: white;
     margin: 0 ;
 }
 #colunm {
     column-count: 2;
     column-gap: 13px;
     font-size: 14px;
-    text-align: left;
+    text-align: center;
     list-style: none;
     padding: 10px;
     column-rule: 4px dotted gray;
@@ -77,10 +77,11 @@ span {
 }
 
 .a-adoptar{
+    display: block;
     background-color: rgb(0, 255, 85);
-    width: 100vw;
+    
 }
 
-.footer{
-    background-color: rgb(0, 255, 85);
+/*.footer{
+    background-color: rgb(0, 255, 85);*/
 }

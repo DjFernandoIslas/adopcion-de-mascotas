@@ -1,8 +1,7 @@
-/*:root {
+/*{
 font-family: 'Irish Grover', cursive;
 font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif;
-}*/
+font-family: 'Raleway', sans-serif; */
 
 .contenedor_txt {
     background-color:white;
@@ -37,9 +36,10 @@ span {
     align-content: center;
 
 }
-img {
+#imagen {
     width: 100%;
     height: 550px;
+    
 }
 .button {
     
