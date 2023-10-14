@@ -17,7 +17,7 @@ body{
   }
   
   .side-left {
-    background-color: #a749ff;
+    background-color: #ddb9ff;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -29,7 +29,7 @@ body{
   }
   
   .side-right {
-    background-color: #a749ff;
+    background-color: #ddb9ff;
     display: flex;
     flex-direction: column;
   }
@@ -71,7 +71,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #FFA500;
+    background-color: #addb08e7;
   
 }
 
