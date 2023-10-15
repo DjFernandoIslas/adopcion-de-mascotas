@@ -38,8 +38,16 @@
     height: 300px;
     width: 254px;
     border-radius: 5px;
-    
+    object-fit: cover;
+    align-content: center;
+    justify-content: center;
     transition: .5s;
+}
+.cards p {
+    margin: 5px;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
 }
 .texto {
     height: 80px;
@@ -57,12 +65,6 @@ h1 {
     margin: 5px;
     font-size: 19px;
     text-align: left;
-}
-p {
-    margin: 5px;
-    font-size: 14px;
-    opacity: 0;
-    visibility: hidden;
 }
 .cards:hover {
     cursor: pointer;
