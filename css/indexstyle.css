@@ -19,26 +19,16 @@ body{
   }
   
   .side-left {
-    background-color: #dab2ff;
+    background-color: #e9d1ff;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 1rem;
+    align-items: center;
   }
   
   .cuerpo {
     background: rgb(255, 248, 248);
-  }
-  
-  .side-right {
-    background-color: #a749ff;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .side-right-container{
-    color: white;
-    padding: 1rem;
   }
   
   .side-left-img {
@@ -73,7 +63,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #FFA500;
+    background-color: #999600;
 }
 
 .footer-left{
@@ -90,7 +80,7 @@ footer{
 
 footer a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 
