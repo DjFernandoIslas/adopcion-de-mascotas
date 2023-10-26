@@ -1,26 +1,28 @@
 .suscribite h2{
-    background-color: gray;
+    background-color: #6ABD45;
     text-align: center;
+    margin: 0 0 10px 0;
   }
   .suscribite {
   background-color: white;
   text-align: center;
-  border: black solid 0.2vh;
+  /*border: black solid 0.2vh;*/
   margin: 5px ;
   }
   .suscribite input{
-    margin: 10px;
+    margin: 5px;
    
   }
-  .suscribite h2{
-    margin: 0 0 10px 0;
-  }
+  /*.suscribite h2{
+    
+  }*/
   input[type=submit]{
-    border-radius: 0.5vw;
+    border-radius: 5px;
     border: none;
-    padding: 1em 2em;
+    padding: 0.5em 5em;
     cursor: pointer;
-    margin: 0 20px;
+    margin: 5px 10px;
+    font-weight: bold;
    
   }
   

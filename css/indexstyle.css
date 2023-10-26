@@ -18,71 +18,9 @@ body{
     padding: 0;
   }
   
-  .side-left {
-    background-color: #e9d1ff;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 1rem;
-    align-items: center;
-  }
-  
   .cuerpo {
     background: rgb(255, 248, 248);
   }
-  
-  .side-left-img {
-    width: 12vw;
-    height: 24vh;
-    padding: 3px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-}
-
-.boton-right-side{
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #addb08e7;
-    color: black;
-    text-decoration: none;
-    border-radius: 10px;
-    width: 60%;
-    margin: 10px;
-    text-align: center;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 2, 2);
-}
-
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #999600;
-}
-
-.footer-left{
-    display: flex;
-    flex-direction: column;
-    padding-right: 10rem;
-}
-
-.footer-right{
-    display: flex;
-    flex-direction: column;
-    padding-left: 10rem;
-}
-
-footer a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
 
 /* ESTILOS REMAKE INDEX */
 
@@ -103,6 +41,7 @@ footer a{
 
 .index-wrapper-left{
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,10 +49,13 @@ footer a{
   padding: 1em;
   text-align: center;
   align-items: center;
+  background-color: #99960021;
+  
 }
 
 .index-wrapper-right{
   width: 50%;
+  background-color: #99960021;
 }
 
 .wrapper-img-logo{
@@ -131,7 +73,7 @@ footer a{
     color: black;
     text-decoration: none;
     width: 20%;
-    margin: 10px;
+    margin: 0;
     text-align: center;
     box-shadow: 0px 2px 4px rgba(0, 0, 2, 2);
     align-items: center;

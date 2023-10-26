@@ -1,3 +1,5 @@
+/* ESTILOS HEADER */
+
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@ body {
 }
 
 .menu {
-    background-color: #addb08e7; /* Fondo naranja */
+    background-color: #6ABD45; /* Fondo naranja */
     display: flex;
     justify-content: space-around; /* Centra elementos horizontalmente */
     align-items: center; /* Centra elementos verticalmente */
@@ -38,9 +40,57 @@ body {
     transition: color 0.3s; /* Transición suave del color al pasar el mouse */
     font-size: 1vw; /* Tamaño de fuente 2 puntos más grande */
     font-weight: bold; /* Fuente en negrita */
-    
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
 }
 
 .menu-list li a:hover {
     color: #8400ff; /* Color de texto blanco al pasar el mouse */
+   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agregar sombra al texto */
+}
+
+/* ESTILOS FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #995700;
+    width: 100%;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10rem;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+/* ESTILO BOTON PLANTILLA */
+
+.boton-right-side{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6ABD45;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 60%;
+    margin: 10px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 2, 2);
 }

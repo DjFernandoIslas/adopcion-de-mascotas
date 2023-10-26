@@ -1,5 +1,5 @@
 * {
-    margin-top: 0;
+    /* margin-top: 0;  COMENTADO PORQUE CHOCABA CON EL HEADER Y NO LE PERMITIA QUEDAR CENTRADO */
     padding: 0;
 }
 .card-container {
@@ -11,9 +11,6 @@
     display: flex;
     margin: 0 auto 20px ;
     overflow: hidden;
-    
-    
-    
 }
 
 .img-container {
@@ -26,13 +23,11 @@
     height: auto;
     border-radius: 5px;
 }
+
 .text-container {
     width: 70%;
-    padding: 5px;
-    
-    justify-content: center;
-    
-    
+    padding: 5px;    
+    justify-content: center; 
 }
 
 .enlace_b {
@@ -64,5 +59,50 @@ a:hover {
 .contenedor {
     text-align: center;
     font-family: Raleway;
-    
 }
+
+.main-refugios{
+    padding: 1em;
+}
+
+/* WRAPPER REFUGIOS */
+
+.refugios-main{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .refugios-wrapper{
+    width: 100%;
+    height: 30rem;
+    background-image: url(../img/cute-cat.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .refugios-wrapper-left{
+    color: white;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 1em;
+    text-align: center;
+    align-items: center;
+    background-color: #99960021;
+    
+  }
+  
+  .refugios-wrapper-right{
+    width: 50%;
+    background-color: #99960021;
+  }
+  
+  .refugios-img-logo{
+    width: 3em;
+    height: 2em;
+  }
