@@ -4,17 +4,31 @@
     align-items: center;
     background-color: #eff9ff;
   }*/
-  .containerPerros {
+  
+
+  @media (min-width: 1025px){
+
+  
+
+  .container-perros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 40px auto;
   }
 
-  .containerPerros h1{
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+    .vote-title-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   
   #fotoPrincipalContainer,
   #fotoPrincipalContainer img {
-    height: 500px;
+    height: 30em;
+    display: flex;
+    justify-content: center;
   }
   
   #spinner {
@@ -38,15 +52,22 @@
   
   #botonesContainer{
       display: flex;
+      flex-direction: row;
+      justify-content: center;
   }
   
   button {
       font-size: xx-large;
-      background-color: unset;
+      background-color: rgb(0, 62, 218);
       padding: 1rem;
-      margin: 10px 20px;
+      margin: 1em;
       transition: 100ms ease-in-out;
-  }
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+}
   
   button:hover {
       transform: scale(1.1);
@@ -57,7 +78,7 @@
   }
   
   #dislike:hover {
-      background-color: #79000023;
+      background-color: #a4010123;
   }
   
   .perrosContainer {
@@ -85,3 +106,5 @@
   .escondido {
     display: none;
   }
+
+}

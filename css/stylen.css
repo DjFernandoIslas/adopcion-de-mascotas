@@ -1,3 +1,9 @@
+
+@media (min-width: 1025px){
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -124,3 +130,136 @@ h1 {
     height: 2em;
   }
   
+}
+
+@media (max-width: 768px){
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    
+    
+    .contenedor {
+        
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        
+        
+        
+    
+    }
+    .cards {
+        max-width: 100%;
+        height: 300px;
+        margin: 20px;
+        box-shadow: 5px 5px 20px rgba(78, 77, 77, 0.35);
+        overflow: hidden;
+        border-radius: 5px;
+        box-sizing: content-box;
+        
+        
+    }
+    
+    .cards img {
+        height: 300px;
+        width: 254px;
+        border-radius: 5px;
+        object-fit: cover;
+        align-content: center;
+        justify-content: center;
+        transition: .5s;
+    }
+    .cards p {
+        margin: 5px;
+        font-size: 14px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .texto {
+        height: 80px;
+        width: 250px;
+        padding: 2px;
+        position: relative;
+        background: rgb(27, 27, 27, .5); /*r*/
+        bottom: 88px;
+        color: white;
+        border-radius: 5px;
+        transition: .5s;
+        text-align: justify;
+    }
+    h1 {
+        margin: 1em;
+        text-align: left;
+    }
+    
+    .h1-noticias-cards {
+        margin: 1em;
+        font-size: 15px;
+        text-align: left;
+    }
+    
+    .cards:hover {
+        cursor: pointer;
+    }
+    .cards:hover .texto {
+        height: 225px;
+        bottom: 210px;
+        background: rgb(27, 27, 27, .7);
+    }
+    .cards:hover p {
+        opacity: .8;
+        visibility: visible;
+    }
+    .cards:hover img {
+        transform: scale(1.1); rotate: (-3deg);
+    }
+    
+    /* WRAPPER SECCION NOTICIAS */
+    
+    .noticias-main{
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .noticias-wrapper{
+        width: 100%;
+        height: 25rem;
+        background-image: url(../img/dog-reading.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .noticias-wrapper-left{
+        color: white;
+        text-shadow: 2px 2px 4px rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        background-color: #99960021;
+        
+      }
+      
+      .noticias-wrapper-right{
+        width: 100%;
+        background-color: #99960021;
+      }
+      
+      .noticias-img-logo{
+        width: 3em;
+        height: 2em;
+      }
+
+
+}

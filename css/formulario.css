@@ -1,3 +1,6 @@
+@media (min-width: 1025px){
+
+ 
  form{  
     display: flex;
     flex-direction: column;
@@ -54,3 +57,37 @@ input[type=submit]{
     cursor: pointer;
     margin: 0 20px;
     }
+
+    .container-formulario{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .form-left-right{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+    }
+
+    .form-left-side{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-right-side{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+.form-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+
+}

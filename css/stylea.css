@@ -3,6 +3,9 @@ font-family: 'Irish Grover', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Raleway', sans-serif; */
 
+@media (min-width: 1025px){
+
+
 .contenedor_txt {
     background-color:white;
     margin: 0;
@@ -103,3 +106,112 @@ a:hover {
     width: 3em;
     height: 2em;
   }
+
+}
+
+@media (max-width: 768px){
+    .contenedor_txt {
+        background-color:white;
+        margin: 0;
+        padding: 0;
+    }
+    .texto {
+        padding: 1em;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 16px;
+        margin-bottom: 1em;
+    }
+    h1 {
+        margin: 1em;
+        text-align: center;
+    }
+    h2 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    #bold {
+        font-weight: bold;
+    }
+    span {
+        font-weight: 500 bold;
+        color: red;
+        
+    }
+    .box {
+        background-color: rgba(0, 0, 0, 0.25);
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    #imagen {
+        width: 100%;
+        height: 550px;
+        
+    }
+    .button {
+        padding: 10px;
+        background-color: #6ABD45;
+        color: black;
+        text-decoration: none;
+        width: 20%;
+        margin: 10px;
+        text-align: center;
+        box-shadow: 0px 2px 4px rgba(0, 0, 2, 2);
+        align-items: center;
+    }
+    a {
+        font-weight: bold;
+        text-decoration: none;
+        color: gray;
+    }
+    a:hover {
+        color: black;
+        background: rgba(0, 0, 0, 0.09);
+    }
+    
+    /* ESTILOS WRAPPER */
+    
+    .adopta-main{
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .adopta-wrapper{
+        width: 100%;
+        height: 23rem;
+        background-image: url(../img/adopcion.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; /* Centrar la imagen */
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .adopta-wrapper-left{
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        background-color: #99960021;
+      }
+      
+      .adopta-wrapper-right{
+        width: 100%;
+        background-color: #99960021;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .wrapper-img-logo{
+        width: 3em;
+        height: 2em;
+      }
+    
+}

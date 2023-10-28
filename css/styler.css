@@ -1,3 +1,9 @@
+
+@media (min-width: 1025px){
+
+
+
+
 * {
     /* margin-top: 0;  COMENTADO PORQUE CHOCABA CON EL HEADER Y NO LE PERMITIA QUEDAR CENTRADO */
     padding: 0;
@@ -106,3 +112,121 @@ a:hover {
     width: 3em;
     height: 2em;
   }
+
+}
+
+@media (max-width: 768px){
+    * {
+        /* margin-top: 0;  COMENTADO PORQUE CHOCABA CON EL HEADER Y NO LE PERMITIA QUEDAR CENTRADO */
+        padding: 0;
+    }
+    .card-container {
+        width: 95%;
+        max-width: 95%;
+        background:white;
+        border-radius: 10px;
+        box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 20px ;
+        overflow: hidden;
+    }
+    
+    .img-container {
+        border-radius: 15px;
+        height: auto;
+        
+    }
+    .img-container img {
+        width: 10em;
+        height: auto;
+        border-radius: 5px;
+    }
+    
+    .text-container {
+        width: 70%;
+        padding: 5px;    
+        justify-content: center; 
+        align-items: center;
+    }
+    
+    .enlace_b {
+        background: rgba(0, 0, 0, 0.02);
+        padding: 5px;
+    }
+    p {
+        font-size: 1em;
+        font-family: Raleway;
+        padding: 15px;
+    }
+    h2 {
+        padding: 5px 15px;
+        font-size: 1em;
+        font-family: Raleway;
+    
+    }
+    
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+    a:hover {
+        background: rgba(0, 0, 0, 0.09);
+        color: black;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    .contenedor {
+        text-align: center;
+        font-family: Raleway;
+    }
+    
+    .main-refugios{
+        padding: 1em;
+    }
+    
+    /* WRAPPER REFUGIOS */
+    
+    .refugios-main{
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .refugios-wrapper{
+        width: 100%;
+        height: 30rem;
+        background-image: url(../img/cute-cat.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .refugios-wrapper-left{
+        color: white;
+        text-shadow: 2px 2px 4px rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        background-color: #99960021;
+        
+      }
+      
+      .refugios-wrapper-right{
+        width: 100%;
+        background-color: #99960021;
+      }
+      
+      .refugios-img-logo{
+        width: 3em;
+        height: 2em;
+      }
+
+}

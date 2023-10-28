@@ -8,9 +8,8 @@
     <link rel="favicon" href="img/favicon.ico">
     <link rel="stylesheet" href="./css/stylen.css">
     <link rel="stylesheet" href="./css/side.css">
-    <link rel="stylesheet" href="./css/vote-style.css"
-    <title>Adopción de mascotas</title>
-    <script src="./JS/index.js"></script>
+    <link rel="stylesheet" href="./css/vote-style.css">
+    <title>Adopcion de mascotas</title>
 </head>
 <body>
 <header>
@@ -19,22 +18,28 @@
             <img src="img/logo.png" alt="Adopta una mascota">
         </div>
         <ul class="menu-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="adopta.html">Adopta</a></li>
-            <li><a href="#">Quienes somos</a></li>
-            <li><a href="noticias.html">Noticias</a></li>
-            <li><a href="refugios.html">Refugios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./adopta.html">Adopta</a></li>
+            <li><a href="./vote.html">Votacion</a></li>
+            <li><a href="./noticias.html">Noticias</a></li>
+            <li><a href="./refugios.html">Refugios</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
         </ul>
     </nav>
 </header>
 <div class="structure-container">
-<div class="side-left">
-    <img class="side-left-img" src="./img/sideleftperro.jpg" alt="Imagen de un perro" href="#">
-    <img class="side-left-img" src="./img/sideleftgato.jpg" alt="Imagen de un gato"  href="#">
-    <img class="side-left-img" src="./img/sideleftloro.jpg" alt="Imagen de dos loros"  href="#">
-    <img class="side-left-img" src="./img/sideleftconejo.jpg" alt="Imagen de un conejo"  href="#"> 
-</div>
+    <div class="side-left">
+        <h3>Adoptados esta semana</h3>
+        <img class="side-left-img" src="./img/sideleftperro.jpg" alt="Imagen de un perro" href="#">
+        <p>Sebastian</p>
+        <img class="side-left-img" src="./img/sideleftgato.jpg" alt="Imagen de un gato"  href="#">
+        <p>John</p>
+        <img class="side-left-img" src="./img/sideleftloro.jpg" alt="Imagen de dos loros"  href="#">
+        <p>Molly y Holly</p>
+        <img class="side-left-img" src="./img/sideleftconejo.jpg" alt="Imagen de un conejo"  href="#">
+        <p>Bugs</p>
+        <a href="https://www.ejemplo.com" class="boton-right-side">Requisitos de adopcion</a>
+    </div>
 <div class="noticias-main">
     <div class="noticias-wrapper">
         <div class="noticias-wrapper-left">
@@ -45,11 +50,15 @@
 <div class="noticias-wrapper-right">    
 </div>
 </div>
-    <section class="containerPerros">
-        <h1>Vota por las mejores imagenes de Perros</h1>
+    <section>
+    <div class="container-perros">
+        <div class="vote-title-container">
+            <h1>Like👍🏻 or Dislike👎🏻</h1>
+            <h3>Vota por las fotos que nos envian las nuevas familias de nuestros ya adoptados</h3>
+        </div>
         <div id="fotoPrincipalContainer">
             <div class="loader" id="spinner"></div>
-            <img src="" alt="Perrito lindo" id="perroActual" />
+            <img src="" alt="Perrito lindo" id="perroActual"/>
         </div>
         <div id="botonesContainer">
           <button id="like">👍🏻</button>
@@ -58,9 +67,8 @@
         </div>
         <div class="perrosContainer" id="perrosLikeContainer"></div>
         <div class="perrosContainer" id="perrosDislikeContainer"></div>
-    </section>
-</div>
-</div>
+    </div>    
+</section>
 <footer>
     <div class="footer-left">
         <a href="http://www.instagram.com/" target="_blank">Instagram</a>
@@ -77,6 +85,7 @@
         <a href="#">Denunciar maltrato</a>
     </div>
 </footer>
+<script src="./JS/index.js"></script>
 </body>
 <script src="./JS/votacion.js"></script>
 </html> 
