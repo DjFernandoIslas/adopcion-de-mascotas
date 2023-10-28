@@ -99,13 +99,11 @@ a:hover {
     padding: 1em;
     text-align: center;
     align-items: center;
-    background-color: #99960021;
     
   }
   
   .refugios-wrapper-right{
     width: 50%;
-    background-color: #99960021;
   }
   
   .refugios-img-logo{
@@ -214,14 +212,11 @@ a:hover {
         justify-content: center;
         width: 100%;
         text-align: center;
-        align-items: center;
-        background-color: #99960021;
-        
+        align-items: center;  
       }
       
       .refugios-wrapper-right{
         width: 100%;
-        background-color: #99960021;
       }
       
       .refugios-img-logo{
