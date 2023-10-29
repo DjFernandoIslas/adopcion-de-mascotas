@@ -89,76 +89,6 @@ span {
 
 }
 
-@media (max-width: 768px) {
-    .container-card {
-      max-width: 100%; /* Cambiamos el ancho máximo al 100% */
-      display: block; /* Cambiamos a bloque para que las cards se apilen una encima de la otra */
-      margin: 0; /* Eliminamos el margen para aprovechar el espacio de la pantalla */
-    }
-  
-    .card {
-      width: 100%;
-      /*Cambiamoselanchodelascardsal100%*/margin: 0 auto;
-      /*Centramoslascardshorizontalmente*/margin-bottom: 20px;
-      /*Agregamosunmargeninferiorparasepararlascards*/background: white;
-      /*Mantenemoselfondoblanco*/border-radius: 20px;
-      /*Mantenemoselborderedondeado*/box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-       /* Mantenemos la sombra */    :;
-      -webkit-border-radius: 0 20px;
-      -moz-border-radius: 0 20px;
-      -ms-border-radius: 0 20px;
-      -o-border-radius: 0 20px;
-}
-  
-    .card img {
-      width: 100%; /* El ancho de la imagen al 100% */
-      height: auto; /* Mantenemos la proporción original */
-    }
-  
-    .card h2 {
-      font-size: 17px; /* Mantenemos el tamaño de la fuente original */
-      display: flex;
-      justify-content: center;
-    }
-  
-    .card p {
-      font-size: 11px; /* Mantenemos el tamaño de la fuente original para el texto */
-    }
-  
-    .card a {
-      font-size: 1.1rem; /* Restablecemos el tamaño de fuente del enlace */
-    }
-  
-    #colunm {
-      column-count: 1; /* Cambiamos a una sola columna para dispositivos móviles */
-      column-gap: 0; /* Eliminamos el espacio entre columnas */
-      font-size: 14px; /* Mantenemos el tamaño de fuente original */
-      text-align: center; /* Centramos el contenido en dispositivos móviles */
-      list-style: none; /* Eliminamos la lista puntada */
-      padding: 10px; /* Mantenemos el relleno */
-      column-rule: none; /* Eliminamos la regla entre columnas */
-      color: gray; /* Mantenemos el color de texto original */
-    }
-
-    span {
-        font-weight: bold;
-        color: #ff8000;
-    }
-    
-    .a-adoptar{
-        display: flex;
-        background-color: #6ABD45;
-        text-decoration: none;
-        color: white;
-        justify-content: center;
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-}
-}
-
 @media (max-width: 768px){
   
 * {
@@ -242,7 +172,6 @@ span {
 .a-adoptar{
   display: block;
   background-color: #6ABD45;
-  
 }
 
 }

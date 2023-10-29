@@ -116,13 +116,11 @@ h1 {
     padding: 1em;
     text-align: center;
     align-items: center;
-    background-color: #99960021;
     
   }
   
   .noticias-wrapper-right{
     width: 50%;
-    background-color: #99960021;
   }
   
   .noticias-img-logo{
@@ -247,13 +245,11 @@ h1 {
         width: 100%;
         text-align: center;
         align-items: center;
-        background-color: #99960021;
         
       }
       
       .noticias-wrapper-right{
         width: 100%;
-        background-color: #99960021;
       }
       
       .noticias-img-logo{

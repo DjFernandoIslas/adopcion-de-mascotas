@@ -94,12 +94,10 @@ a:hover {
     padding: 1em;
     text-align: center;
     align-items: center;
-    background-color: #99960021;
   }
   
   .adopta-wrapper-right{
     width: 50%;
-    background-color: #99960021;
   }
   
   .wrapper-img-logo{
@@ -199,12 +197,10 @@ a:hover {
         width: 100%;
         text-align: center;
         align-items: center;
-        background-color: #99960021;
       }
       
       .adopta-wrapper-right{
         width: 100%;
-        background-color: #99960021;
         display: flex;
         justify-content: center;
       }
