@@ -20,6 +20,7 @@ body {
     align-items: center; /* Centra elementos verticalmente */
     padding: 10px 0; /* Añade espacio alrededor del logo y del menú */
     margin-bottom: 1px;
+    align-content: center;
 }
 
 .logo img {
@@ -60,20 +61,31 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #995700;
+    background-color: #2e9623;
     width: 100%;
 }
 
 .footer-left{
     display: flex;
-    flex-direction: column;
-    padding-right: 10rem;
+    padding: 1rem 6rem 1rem 0;
+    align-items: center;
+}
+#pie {
+    height: 40px;
+    width: 40px;
+    padding: 1rem;
+   
+}
+.txt {
+    text-align: center;
+    align-content: center;
+    align-items: center;
 }
 
 .footer-right{
     display: flex;
     flex-direction: column;
-    padding-left: 10rem;
+    padding: 1rem 6rem 1rem;
 }
 
 footer a{
@@ -119,7 +131,7 @@ footer a{
     
     
         .logo img{
-          width: 2rem;
+          width: 10rem;
           height: 2rem;
         }
 
@@ -143,7 +155,7 @@ footer a{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: #995700;
+            background-color: #2e9623;
             width: 100%;
         }
 
@@ -152,6 +164,15 @@ footer a{
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+        #pie {
+            height: 30px;
+            width: 30px;
+            padding: 1rem;
+           
+        }
+        .txt {
+            text-align: center;
         }
 
         .footer-right{
