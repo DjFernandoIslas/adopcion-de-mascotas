@@ -42,13 +42,12 @@
 }
 p {
     font-size: 1em;
-    font-family: Raleway;
+    font-family: 'Raleway';
     padding: 15px;
 }
-h2 {
+h3 {
     padding: 5px 15px;
-    font-size: 1em;
-    font-family: Raleway;
+    font-family: 'Raleway';
 
 }
 
@@ -56,10 +55,9 @@ a {
     text-decoration: none;
     color: gray;
 }
-a:hover {
+.card-container a:hover {
     background: rgba(0, 0, 0, 0.09);
     color: black;
-    border-radius: 10px;
     font-weight: bold;
 }
 .contenedor {
@@ -156,13 +154,13 @@ a:hover {
     }
     p {
         font-size: 1em;
-        font-family: Raleway;
+        font-family: 'Raleway';
         padding: 15px;
     }
     h2 {
         padding: 5px 15px;
         font-size: 1em;
-        font-family: Raleway;
+        font-family: 'Raleway';
     
     }
     
@@ -173,12 +171,11 @@ a:hover {
     a:hover {
         background: rgba(0, 0, 0, 0.09);
         color: black;
-        border-radius: 10px;
         font-weight: bold;
     }
     .contenedor {
         text-align: center;
-        font-family: Raleway;
+        font-family: 'Raleway';
     }
     
     .main-refugios{

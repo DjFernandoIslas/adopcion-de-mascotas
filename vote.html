@@ -6,27 +6,31 @@
     <link rel="stylesheet" href="./css/indexstyle.css">
     <link rel="stylesheet" href="./css/stylesh.css">
     <link rel="favicon" href="img/favicon.ico">
-    <link rel="stylesheet" href="./css/stylen.css">
     <link rel="stylesheet" href="./css/side.css">
-    <link rel="stylesheet" href="./css/vote-style.css">
-    <title>Adopcion de mascotas</title>
+    <link rel="stylesheet" href="/css/vote-style.css">
+    <title>Adopción de mascotas</title>
+   
+    <script src="./JS/index.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Montserrat:wght@300;500;600;800;900&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+      </style>
 </head>
 <body>
-<header>
-    <nav class="menu">
-        <div class="logo">
-            <img src="img/logo1.png" alt="Adopta una mascota">
-        </div>
-        <ul class="menu-list">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./adopta.html">Adopta</a></li>
-            <li><a href="./vote.html">Votacion</a></li>
-            <li><a href="./noticias.html">Noticias</a></li>
-            <li><a href="./refugios.html">Refugios</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo1.png" alt="Adopta una mascota"></a>
+            </div>
+            <ul class="menu-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./adopta.html">Adopta</a></li>
+                <li><a href="./vote.html">Votacion</a></li>
+                <li><a href="./noticias.html">Noticias</a></li>
+                <li><a href="./refugios.html">Refugios</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 <div class="structure-container">
     <div class="side-left">
         <h3>Adoptados esta semana</h3>
@@ -40,58 +44,56 @@
         <p>Bugs</p>
         <a href="https://www.ejemplo.com" class="boton-right-side">Requisitos de adopcion</a>
     </div>
-<div class="vote-main">
-    <div class="vote-wrapper">
-        <div class="vote-wrapper-left">
-<h1>Votacion</h1>
-<p>En esta seccion podras votar por las fotos que nos mandan las nuevas familias de nuestros ya adoptados compañeros</p>
-<img class="vote-img-logo" src="img/logo.png" alt="Adopta una mascota">
-</div>
-<div class="vote-wrapper-right">
-</div>
-</div>
+    <div class="vote-main">
+        <div class="vote-wrapper">
+            <div class="vote-wrapper-left">
+    <h1>Votacion</h1>
+    <p>En esta seccion podras votar por las fotos que nos mandan las nuevas familias de nuestros compañeros ya adoptados</p>
+    <img class="vote-img-logo" src="img/logo.png" alt="Adopta una mascota">
+    </div>
+    <div class="vote-wrapper-right"></div>
+    </div>
     <section>
-    <div class="container-perros">
-        <div class="vote-title-container">
-            <h1>Like👍🏻 or Dislike👎🏻</h1>
-            <h3>Vota por las fotos que nos envian las nuevas familias de nuestros ya adoptados</h3>
-        </div>
-        <div id="fotoPrincipalContainer">
-            <div class="loader" id="spinner"></div>
-            <img src="" alt="Perrito lindo" id="perroActual"/>
-        </div>
-        <div id="botonesContainer">
-          <button id="like">👍🏻</button>
-          <button id="saltear">Pasar imagen</button>
-          <button id="dislike">👎🏻</button>
-        </div>
-        <div class="perrosContainer" id="perrosLikeContainer"></div>
-        <div class="perrosContainer" id="perrosDislikeContainer"></div>
-    </div>    
-</section>
+        <div class="container-perros">
+            <div class="vote-title-container">
+                <h1>Me gusta 👍🏻 No me gusta👎🏻</h1>
+                <h3>Vota por las fotos que nos envian las nuevas familias de nuestros ya adoptados</h3>
+            </div>
+            <div id="fotoPrincipalContainer">
+                <div class="loader" id="spinner"></div>
+                <img src="" alt="Perrito lindo" id="perroActual"/>
+            </div>
+            <div id="botonesContainer">
+              <button id="like">👍🏻</button>
+              <button id="saltear">Pasar imagen</button>
+              <button id="dislike">👎🏻</button>
+            </div>
+            <div class="perrosContainer" id="perrosLikeContainer"></div>
+            <div class="perrosContainer" id="perrosDislikeContainer"></div>
+        </div>    
+    </section>
+</div>
+</div>
 <footer>
     <div class="footer-left">
-        <a href="http://www.instagram.com/" target="_blank">Instagram</a>
-        <a href="http://www.facebook.com/" target="_blank">Facebook</a>
-        <a href="#">Contacto</a>
-        <a href="#">Donaciones</a>
-        <a href="#">Trabaja con nosotros</a>
+        <div>
+            <div class="txt">
+                <h2>Seguinos en las Redes:</h2>
+            </div>
+            <a href="http://facebook.com"><img id="pie" src="/img/facebook.png" alt=""></a>
+            <a href="http://www.instagran.com"><img id="pie" src="/img/instagram.png" alt=""></a>
+            <a href="ttp://www.twitter.com"><img id="pie" src="/img/twitter.png" alt=""></a>
+            <a href="http://www.tik-tok.com"><img id="pie" src="/img/tik-tok.png" alt=""></a>
+            <a href="http://web.whatsapp.com"><img id="pie" src="/img/whatsapp.png" alt=""></a>
+        </div>
     </div>
     <div class="footer-right">
-        <a href="#">Envianos un email</a>
-        <a href="#">Telefono de emergencias</a>
-        <a href="#">Whatsapp</a>
-        <a href="#">Trabaja con nosotros</a>
-        <a href="#">Denunciar maltrato</a>
+        <a href="#">📧 Envianos un email</a>
+        <a href="#">☎️ Telefono de emergencias</a>
+        <a href="#">👷 Trabaja con nosotros</a>
+        <a href="#">🤬 Denunciar maltrato</a>
     </div>
 </footer>
-<script src="./JS/index.js"></script>
+<script src="/JS/votacion.js"></script>
 </body>
-<script src="./JS/votacion.js"></script>
-</html> 
-
-
-
-
-
-
+</html>

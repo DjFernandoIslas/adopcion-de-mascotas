@@ -14,7 +14,7 @@ font-family: 'Raleway', sans-serif; */
 .texto {
     padding: 1em;
     text-align: left;
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-size: 16px;
     margin-bottom: 1em;
 }
@@ -23,7 +23,6 @@ h1 {
     text-align: center;
 }
 h2 {
-    font-size: 18px;
     font-weight: 700;
 }
 #bold {
@@ -57,13 +56,14 @@ span {
     align-items: center;
 }
 a {
-    font-weight: bold;
     text-decoration: none;
-    color: gray;
-}
-a:hover {
     color: black;
-    background: rgba(0, 0, 0, 0.09);
+    
+}
+.contenedor_txt a:hover {
+    font-weight: bold;
+    color: black;
+    background-color: gray;
 }
 
 /* ESTILOS WRAPPER */
@@ -94,6 +94,7 @@ a:hover {
     padding: 1em;
     text-align: center;
     align-items: center;
+    font-family: 'Raleway';
   }
   
   .adopta-wrapper-right{
@@ -112,11 +113,12 @@ a:hover {
         background-color:white;
         margin: 0;
         padding: 0;
+        font-family: 'Raleway';
     }
     .texto {
         padding: 1em;
         text-align: center;
-        font-family: Raleway;
+        font-family: 'Raleway';
         font-size: 16px;
         margin-bottom: 1em;
     }
@@ -150,11 +152,11 @@ a:hover {
         
     }
     .button {
+        display: block;
         padding: 10px;
         background-color: #6ABD45;
         color: black;
         text-decoration: none;
-        width: 20%;
         margin: 10px;
         text-align: center;
         box-shadow: 0px 2px 4px rgba(0, 0, 2, 2);
@@ -165,7 +167,7 @@ a:hover {
         text-decoration: none;
         color: gray;
     }
-    a:hover {
+    .contenedor_txt a:hover {
         color: black;
         background: rgba(0, 0, 0, 0.09);
     }
@@ -197,6 +199,7 @@ a:hover {
         width: 100%;
         text-align: center;
         align-items: center;
+        font-family: 'Raleway';
       }
       
       .adopta-wrapper-right{

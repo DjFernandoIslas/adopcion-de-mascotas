@@ -9,16 +9,16 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway';
     background-color: #fafafa;
 }
 
 .menu {
     background-color: #6ABD45; /* Fondo naranja */
     display: flex;
-    justify-content: space-around; /* Centra elementos horizontalmente */
+    justify-content: space-between; /* Centra elementos horizontalmente */
     align-items: center; /* Centra elementos verticalmente */
-    padding: 10px 0; /* Añade espacio alrededor del logo y del menú */
+    padding: 0.5rem 2rem; /* Añade espacio alrededor del logo y del menú */
     margin-bottom: 1px;
     align-content: center;
 }
@@ -78,14 +78,17 @@ footer{
 }
 .txt {
     text-align: center;
-    align-content: center;
-    align-items: center;
+}
+.txt h2 {
+    font-family: 'Raleway';
+    
 }
 
 .footer-right{
     display: flex;
     flex-direction: column;
     padding: 1rem 6rem 1rem;
+    font-family: 'Raleway';
 }
 
 footer a{
@@ -160,7 +163,7 @@ footer a{
 
         footer{
             display: flex;
-            flex-direction: column;
+            flex-direction  : column;
             justify-content: center;
             background-color: #2e9623;
             width: 100%;
