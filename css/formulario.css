@@ -1,93 +1,110 @@
-@media (min-width: 1025px){
+h2{
+    margin: 0;
+    padding: 1vw;
+    color: black;
+    text-align: center;
+}
 
- 
- form{  
-    display: flex;
-    flex-direction: column;
+.container-formulario {
+    padding: 1vw;
+    margin: 0 auto;
+    width: 90%;
     justify-content: center;
-} 
-
+    border-radius: 2vw;
+    background-color: white;
+  } 
  form div{
+    padding:0;
+    margin :1.5vw 2vw;
     width: 80%;
-    font-family: sans-serif;
-    color:  rgb(50, 0, 66);
-   
-} 
+    font-family: 'Raleway';
+    color:  rgb(0, 38, 255);
+   } 
 
 label[for=casa],label[for=departamento]
 ,label[for=propietario],label[for=inquilino],label[for=si]
 ,label[for=no],label[for=noalquilo],label[for=perro]
 ,label[for=gato],label[for=simascota],label[for=nomascota]{
 color: black;
-
+}
+input[type=text],input[type=email],input[type=number]  { 
+    box-shadow: 1px 2px 2px  1px rgba(0, 0, 0, 0.25) ;
 }
  #nombre,#apellido,#email,#numero,#telefono,#direccion,#localidad,#provincia,#edades{
-    padding: 1% 20% 1% 1%; 
+    padding: 1% 80% 1% 1%; 
     border-radius: 0.3vw;
-    /*border: none;*/
     border: 1px solid rgba(0, 0, 0, 0.25);
-    box-shadow:  2px 4px 2px rgba(0, 0, 0, 0.25);
-   
-}
-textarea {
-    resize: none;
-}
+   }
+
 #doc,#hs,#cerramientos,#castracion{
-    padding: 1% 0 ;
+    padding: 0.5rem ;
     border-radius: 0.3vw;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    margin-bottom: 1rem;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+}
+.btn:hover{
+    /*transition: 1.5s ;*/
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.09);
 }
 
-input[type=reset]{
-background-color: rgb(150, 150, 150);
-color:black;
-border-radius: 0.5vw;
-border: none;
-padding: 1em 2em;
-cursor: pointer;
-width: 200px;
-}
 input[type=submit]{
-    width: 200px;
-    background-color: #46be12;
+    background-color: rgba(0, 0, 0, 0.06);
     color:black;
     border-radius: 0.5vw;
     border: none;
-    padding: 1em 2em;
+    padding: 1em 8em;
     cursor: pointer;
-    margin: 0 20px;
+    width: 1.5 em;
     }
-
-    .container-formulario{
-        display: flex;
-        flex-direction: column;
-
-    }
-    .form-left-right{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 5rem;
-    }
-
-    .form-left-side{
-        width: 50%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .form-right-side{
-        width: 50%;
-        display: flex;
-        justify-content: center;
-    }
-
-.form-title{
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
+input[type=reset]{
+    background-color:rgba(0, 0, 0, 0.06);
+    color: black;
+    border-radius: 0.5vw ;
+    padding: 1em 8em;
+    cursor: pointer;
+    width: 1.5 em;
+    border:none;
+    margin: 0 15px;
 }
 
-
+::placeholder {
+    width: 140%;
 }
+
+    @media (max-width: 768px) {
+        .botones {
+            display: block; 
+            width: 100%;
+            padding: 0;
+
+        }
+
+        p {
+            font-family: 'Raleway';
+            font-size: 1em;
+        }
+
+        h2 {
+            font-family: 'Raleway'; 
+        }
+
+        #doc,#hs,#cerramientos,#castracion{
+            padding: 10px ;
+            border-radius: 0.3vw;
+            border: 1px solid rgba(0, 0, 0, 0.25);
+            margin-bottom: 1rem;
+        }
+
+        input[type=submit],
+        input[type=reset] {
+            width: 100%;
+            margin: 0.5rem 0;
+    }
+    }
