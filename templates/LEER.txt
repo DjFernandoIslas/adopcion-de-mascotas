@@ -1,0 +1,77 @@
+fer te creo este archivo para guiarte maso
+
+fijate ke cree la carpeta template y adentro otra llamada ingreso, dentro de la carpeta ingreso estan los archivos 
+admin, index, login, registro, y userlog... y en la carpeta templates esta el archivo py llamado app.py.
+
+bueno, para ke te funcione, en visual abri un nuevo proyecto con abrir carpeta y ke la carpeta raiz sea template
+una vez creado el directorio en el archivo app.py tenes toda la programacion para ejecutar el funcionammiento de lo ke 
+estamos haciendo... ahora, primero tenes ke crear la base de datos llamada "login" luego dos tablas, una llamada 
+"usuarios" y esta debe tener los campos con nombres "id, correo, password, nombre, ciudad," el ID debe ser autoincrement
+y la segunda tabla llamada "rol_usuarios" debe tener los campos con nombre "id_rol, descripcion" la cual la segunda tabla debe estar 
+relacionada con con "usuarios".
+
+si esto esta bien escrito deberia funcionarte cuando lo copies y pegues en mysql:
+-- Crear la base de datos
+CREATE DATABASE IF NOT EXISTS login;
+
+-- Usar la base de datos creada
+USE login;
+
+-- Crear la tabla 'usuarios'
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    correo VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    nombre VARCHAR(255) NOT NULL,
+    ciudad VARCHAR(255) NOT NULL
+);
+
+-- Crear la tabla 'rol_usuarios'
+CREATE TABLE IF NOT EXISTS rol_usuarios (
+    id_rol INT AUTO_INCREMENT PRIMARY KEY,
+    descripcion VARCHAR(255) NOT NULL
+);
+
+-- Agregar la columna de clave foránea en la tabla 'usuarios'
+ALTER TABLE usuarios
+ADD FOREIGN KEY (id_rol) REFERENCES rol_usuarios(id_rol);
+
+yo lo cree con Xampp la base de datos. pero esto ke te puse deberia crearte la base de datos de acuerdo a lo 
+ke vimos en el curso.
+
+Trabajo en PYTHON
+no se como estas usando PYTHON... si li usas con visual studio o usas el shell de PYTHON. yo lo uso con visual studio
+en PYTHON hay ke instalar el flask con el siguiente comando, abris una terminal y ejecutas lo siguiente
+
+pip install flask
+
+si tenes todo bien y no tenes ke configurar nada, instalara el flask, pero si no podes instalarlo me avisas y vamos viendo 
+que problemas tenes... porke a mi me costo instalar primero el pip porke no lo tenia... para saber si lo tenes
+instalado el pip ejecuta lo siguiente
+
+pip --version
+
+si te aparece la version significa ke lo tenes instalado y si no te aparece la version vas a tener ke chekear la
+version de python y ahi, hay ke hacer un proceso.. no se si lo sabras hacer... pero si no, me avisas y lo vamos viendo
+
+una vez instalado el pip y el flask te kedaria instala la parte de mysql a travez de python, para eso vas a tener
+que ejecutar los siguientes comandos
+
+pip install MySQL 
+
+despues el mysqldb
+
+pip install MySQLdb
+
+haciendo todo esto ya deberias poder usar sin problemas todo el sistema de archivos y vas haciendo el trabajo con 
+bootstrap... y tambien vas a poder acceder con un usuario ke crees y vas viendo como vas rellenando las paginas de 
+acuerdo a la categoria del usuario.
+
+la categoria de usuarios esta definida en la tabla rol_usuarios la categoria 1 es el admin y la categoria 2 es el usuario comun 
+
+todavia me falta el tema de hashear las contraseñas... solamente estan en texto plano... y estoy teniendo un problema
+cuando la hasheo me dice usuario o contraseña incorrectos!!! pero despues veremos el tema de solucionarlo.
+
+
+si no podes hacerlo funcionar con la base de datos hacele los arreglos necesarios a cada una de las paginas y despues
+yo lo arreglare y ke kede funcionando.
