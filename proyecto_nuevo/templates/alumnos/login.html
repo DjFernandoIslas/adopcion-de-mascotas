@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>identificarse</title>
+</head>
+<body>
+  <h1>HOLA BIENVENIDO!!</h1>
+  <p>NECESITAS UN USUARIO Y CONTRASEÑA PARA PODER ACCEDER AL PANEL Y VER TUS MATERIAS</p>
+  <form method="post" action="acceso-usuario">  
+    {% if mensaje_error %}
+    <div>
+      {{ mensaje_error }}
+    </div>
+    {% endif %}
+  
+    {% if mensaje_registro %}
+    <div>
+      {{ mensaje_registro }}
+    </div>
+    {% endif %}
+    Correo:     <input type="text" name="txtCorreo" id="txtCorreo"><br> 
+    Contraseña: <input type="text" name="txtPassword" id="txtPassword"><br>         
+                <input type="submit" value="ingresar">
+  </form> 
+  
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de usuarios</title>
+</head>
+<body>
+    <h1>Listado de Usuarios</h1>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>DNI</th>            
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+            <th>foto</th>
+            <th>Acciones</th>
+            
+        </tr>
+        {% for usuario in usuarios %}
+        <tr>
+            <td>{{ usuario.id }}</td>
+            <td>{{ usuario.dni }}</td>
+            <td>{{ usuario.nombre }}</td>
+            <td>{{ usuario.apellido }}</td>
+            <td>{{ usuario.correo }}</td>
+            <td>{{ usuario.foto }}</td>
+            <td>Editar | Borrar</td>
+            <!-- Incluir más campos según los campos de tu tabla usuarios -->
+        </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>
