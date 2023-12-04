@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import render_template, request, redirect, Response, url_for, session
+from flask import render_template, request, redirect, Response, url_for, session,jsonify
 from flask_mysqldb import MySQL,MySQLdb
 from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import secure_filename
@@ -19,35 +19,14 @@ mysql = MySQL(app)
 @app.route('/')
 def home():
     return render_template('/alumnos/login.html')
-'''
- esto seria para la ruta de las otras paginas ke se encuentran en la carpeta templates
-@app.route('/adopta')
-def adopta():
-    return render_template('adopta.html')
-
-@app.route('/noticias')
-def noticias():
-    return render_template('news.html')
-
-@app.route('/refugios')
-def refugios():
-    return render_template('refugios.html')
-
-@app.route('/vote')
-def vote():
-    return render_template('vote.html')
-
-@app.route('/contacto')
-def contacto():
-    return render_template('contacto.html')
-
-@app.route('/form_adopcion')
-def form_adopcion():
-    return render_template('form_adopcion.html')
-'''
 
 
 
+
+
+
+ 
+@app.route ('/base')
 
 #aca accedemos a la pagina para iniciar sesion
 @app.route('/login')
@@ -137,9 +116,60 @@ def logout():
 
 
 
-    
-    
+#Esto es para el update 
+@app.route('/actualizar-registro/<int:user_id>', methods=["POST"])
+def actualizar_registro(user_id):
+    if request.method == 'POST':
+        os.makedirs("uploads", exist_ok=True)
+
+        dni=request.form['txtDni']
+        nombre=request.form['txtNombre']
+        apellido=request.form['txtApellido']
+        correo=request.form['txtCorreo']
+        password=request.form['txtPassword']
+        foto = request.files['txtFoto']
+
+        now = datetime.now()
+        fecha = now.strftime('%Y%H%M%S')
+
+        if foto.filename != '':
+            filename = fecha + "_" + foto.filename
+            filepath = os.path.join("uploads", filename)
+            foto.save(filepath)
+
+        cur = mysql.connection.cursor()
+        cur.execute("""
+            UPDATE usuarios 
+            SET dni=%s, nombre=%s, apellido=%s, correo=%s, password=%s, foto=%s 
+            WHERE id=%s
+        """, (dni, nombre, apellido, correo, password, foto.filename, user_id))
+        mysql.connection.commit()
+        cur.close()
+
+        return render_template('/alumnos/registro.html', mensaje_actualizacion="Actualización Exitosa!")
+
+# Esto es para dejar registros del cambio
+@app.route('/editar-registro/<int:user_id>', methods=["GET"])
+def editar_registro(user_id):
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT * FROM usuarios WHERE id = %s", (user_id,))
+    user = cur.fetchone()
+    cur.close()
+
+    return render_template('/alumnos/editar_registro.html', user=user)
+# Esto es para el DELETE
+
+@app.route('/actualizar-registro/<int:user_id>', methods=["DELETE"])
+def eliminar_registro(user_id):
+    if request.method == 'DELETE':
+        cur = mysql.connection.cursor()
+        cur.execute("DELETE FROM usuarios WHERE id=%s", (user_id,))
+        mysql.connection.commit()
+        cur.close()
+
+        return jsonify({"mensaje": "Eliminación exitosa!"})
     
 if __name__ == '__main__':
     app.secret_key = "PatitaFelices"
     app.run(debug=True, host='0.0.0.0', port=5000, threaded=True)
+
