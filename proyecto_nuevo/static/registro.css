@@ -1,4 +1,69 @@
 html{
 background: rgb(100,187,255);
 background: linear-gradient(90deg, rgba(100,187,255,0.26942114736519607) 0%, rgba(9,9,121,0) 51%, rgba(100,187,255,0.27222226781337533) 100%); 
+margin: 0;
+padding: 0;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.form-container form {
+    border: 3px solid;
+    border-color: rgba(0, 0, 0, 0.304);
+    background-color: rgba(0, 56, 91, 0.132);
+    padding: 30px;
+    border-radius: 20px;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agregado box-shadow */
+}
+
+.form-container form input {
+    height: 2rem;
+    width: 100%;
+}
+
+.form-elements{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.agregar-button {
+    background-color: rgb(69, 255, 156);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid;
+    border-color: rgba(150, 150, 150, 0.304);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Agregado para transiciones suaves */
+}
+
+.agregar-button:hover {
+    background-color: rgb(51, 204, 125); /* Cambia el color al pasar el mouse*/
+    transform: scale(1.05); /* Agranda el botón al pasar el mouse */
+}
+
+.input-style{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid;
+    border-color: rgba(150, 150, 150, 0.304);
+    border-radius: 20px;
 }

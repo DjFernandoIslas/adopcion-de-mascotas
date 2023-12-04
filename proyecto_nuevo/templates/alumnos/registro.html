@@ -4,18 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../static/registro.css">
-  <title>registro de usuarios</title>
+  <link rel="stylesheet" href="../../static/estilos-generales.css">
+  <title>Registro de usuarios</title>
 </head>
 <body>
-  <form method="post" action="nuevo-registro" enctype="multipart/form-data">  
-    DNI:        <input type="text" name="txtDni" id="txtDni"><br>
-    Nombre:     <input type="text" name="txtNombre" id="txtNombre"><br>    
-    Apellido:   <input type="text" name="txtApellido" id="txtApellido"><br>
-    Correo:     <input type="text" name="txtCorreo" id="txtCorreo"><br> 
-    Contraseña: <input type="text" name="txtPassword" id="txtPassword"><br>     
-    Foto:       <input type="file" name="txtFoto" id="txtFoto"><br>    
-                <input type="submit" value="Agregar">
+<header>
+  <nav>
+    <ul>
+      <li><a href="./index.html">Inicio</a></li>
+      <li><a href="#">Registrate</a></li>
+      <li><a href="./listado.html">Lista de Usuarios</a></li>
+    </ul>
+  </nav>
+</header>
+  <div class="form-container">
+  <form method="post" action="nuevo-registro" enctype="multipart/form-data">
+    <div class="form-elements">  
+      DNI:        <input class="input-style" type="text" name="txtDni" id="txtDni"><br>
+      Nombre:     <input class="input-style" type="text" name="txtNombre" id="txtNombre"><br>    
+      Apellido:   <input class="input-style" type="text" name="txtApellido" id="txtApellido"><br>
+      Correo:     <input class="input-style" type="text" name="txtCorreo" id="txtCorreo"><br> 
+      Contraseña: <input class="input-style" type="text" name="txtPassword" id="txtPassword"><br>     
+      Foto:       <input type="file" name="txtFoto" id="txtFoto"><br>    
+                  <input class="agregar-button" type="submit" value="Agregar">
+    </div>
   </form> 
-  
+</div>
 </body>
 </html>
