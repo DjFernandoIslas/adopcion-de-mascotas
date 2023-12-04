@@ -86,7 +86,8 @@ def nuevo_registro():
             foto.save(filepath)
 
     cur = mysql.connection.cursor()
-    cur.execute("INSERT INTO usuarios (dni, nombre, apellido, correo, password, foto, id_rol) VALUES (%s, %s, %s, %s, %s, %s, '2')", (dni, nombre, apellido, correo, password, foto.filename))
+    cur.execute("INSERT INTO usuarios (dni, nombre, apellido, correo, password, foto, id_rol) VALUES (%s, %s, %s, %s, %s, %s, '2')",
+                                                                            (dni, nombre, apellido, correo, password, foto.filename))
     mysql.connection.commit()
     cur.close()
 
@@ -114,19 +115,29 @@ def logout():
 
     return redirect(url_for('home'))
 
+#update
 
+@app.route('/editar-registro/<int:user_id>', methods=["GET", "POST"])
+def editar_registro(user_id):
+    if request.method == 'GET':
+        # Obtener datos del usuario a editar desde la base de datos
+        cur = mysql.connection.cursor()
+        cur.execute("SELECT * FROM usuarios WHERE id = %s", (user_id,))
+        user = cur.fetchone()
+        cur.close()
 
-#Esto es para el update 
-@app.route('/actualizar-registro/<int:user_id>', methods=["POST"])
-def actualizar_registro(user_id):
-    if request.method == 'POST':
+        # Renderizar el formulario de edición
+        return render_template('editar.html', user=user)
+
+    elif request.method == 'POST':
+        # Procesar la actualización del formulario
         os.makedirs("uploads", exist_ok=True)
 
-        dni=request.form['txtDni']
-        nombre=request.form['txtNombre']
-        apellido=request.form['txtApellido']
-        correo=request.form['txtCorreo']
-        password=request.form['txtPassword']
+        dni = request.form['txtDni']
+        nombre = request.form['txtNombre']
+        apellido = request.form['txtApellido']
+        correo = request.form['txtCorreo']
+        password = request.form['txtPassword']
         foto = request.files['txtFoto']
 
         now = datetime.now()
@@ -146,30 +157,32 @@ def actualizar_registro(user_id):
         mysql.connection.commit()
         cur.close()
 
-        return render_template('/alumnos/registro.html', mensaje_actualizacion="Actualización Exitosa!")
+        # Redirigir después de la actualización (puedes ajustar la ruta según tus necesidades)
+        return redirect('/alumnos/listado.html')
 
-# Esto es para dejar registros del cambio
-@app.route('/editar-registro/<int:user_id>', methods=["GET"])
-def editar_registro(user_id):
-    cur = mysql.connection.cursor()
-    cur.execute("SELECT * FROM usuarios WHERE id = %s", (user_id,))
-    user = cur.fetchone()
-    cur.close()
 
-    return render_template('/alumnos/editar_registro.html', user=user)
-# Esto es para el DELETE
 
-@app.route('/actualizar-registro/<int:user_id>', methods=["DELETE"])
+#esto es el delete
+@app.route('/eliminar-registro/<int:user_id>', methods=["GET", "POST"])
 def eliminar_registro(user_id):
-    if request.method == 'DELETE':
+    if request.method == 'GET':
+        # Obtener datos del usuario a eliminar desde la base de datos
         cur = mysql.connection.cursor()
-        cur.execute("DELETE FROM usuarios WHERE id=%s", (user_id,))
+        cur.execute("SELECT * FROM usuarios WHERE id = %s", (user_id,))
+        user = cur.fetchone()
+        cur.close()
+
+        # Renderizar el formulario de eliminación
+        return render_template('eliminar.html', user=user)
+
+    elif request.method == 'POST':
+        # Procesar la eliminación del usuario
+        cur = mysql.connection.cursor()
+        cur.execute("DELETE FROM usuarios WHERE id = %s", (user_id,))
         mysql.connection.commit()
         cur.close()
 
-        return jsonify({"mensaje": "Eliminación exitosa!"})
-    
-if __name__ == '__main__':
-    app.secret_key = "PatitaFelices"
-    app.run(debug=True, host='0.0.0.0', port=5000, threaded=True)
+        return redirect('/alumnos/listado.html')
 
+if __name__ == '__main__':
+    app.run(debug=True)
