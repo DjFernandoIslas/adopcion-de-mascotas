@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eliminar Registro de Usuario</title>
+  <script src="ruta/a/confirmacion_eliminar.js"></script>
+</head>
+<body>
+  <form method="post" action="/eliminar-registro/{{ user['id'] }}" id="formEliminar">  
+    <p>¿Estás seguro de que deseas eliminar el siguiente registro?</p>
+    DNI:        {{ user[1] }}<br>
+    Nombre:     {{ user[2] }}<br>    
+    Apellido:   {{ user[3] }}<br>
+    Correo:     {{ user[4] }}<br> 
+    Contraseña: {{ user[5] }}<br>
+    Foto:       {{ user[6] }}<br>
+    <button type="button" onclick="confirmarEliminacion()">Eliminar</button>
+  </form> 
+</body>
+</html>
