@@ -315,7 +315,7 @@ def nuevo_registro():
     return render_template('/alumnos/login.html', mensaje_registro="Registro Exitoso!")
 
 #-----LISTAR ALUMNOS-------------
-@app.route('/listar', methods= ["GET", "POST"])
+@app.route('/listado', methods= ["GET", "POST"])
 def listar(): 
     cur = mysql.connection.cursor()
     cur.execute("SELECT * FROM `login`.`usuarios`;")
