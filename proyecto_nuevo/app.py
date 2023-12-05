@@ -189,6 +189,8 @@ if __name__ == '__main__':
     app.secret_key = "PatitaFelices"
     app.run(debug=True, host='0.0.0.0', port=5000, threaded=True)
     '''
+#A PARTIR DE ACA ES EL CODIGO DE JESUS, AUN ESTOY ADAPTANDO EL MIO
+
 from flask import Flask
 from flask import render_template, request, redirect, Response, url_for, session, send_from_directory, jsonify
 from flask_mysqldb import MySQL,MySQLdb
