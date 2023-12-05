@@ -1,6 +1,4 @@
-.prueba {
-    color: red;
-    background-color: gray;
-    font-family: sans-serif;
-    display: block;
+.sidebar {
+    width: 200px; /* Ancho de la barra lateral */
+    /* Otros estilos como padding, bordes, etc. */
 }
